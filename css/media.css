@@ -1,4 +1,4 @@
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 768px) {
   .hamburger,
   .toggle-menu {
     display: block;
@@ -6,12 +6,14 @@
   .toggle-menu {
     opacity: 0;
   }
-  
+  .header {
+    padding: 0px 15px;
+  }
   .menu {
     position: fixed;
     top: 0;
-    right: -60%;
-    width: 60%;
+    right: -100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,15 +28,103 @@
   .navigation .menu li a{
     padding: 1rem;
     color:rgb(99, 99, 99);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.779);
   }
   .navigation .menu li a:hover {
-    border-bottom: 6px solid rgb(86, 3, 3);
+    border-bottom: 1px solid rgb(255, 255, 255);
 
   }
+  .toggle-menu {
+    order: 3;
+  }
+  .logo {
+    margin-top: 0.5rem;
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .sign-wraper {
-    position: fixed;
-    right: 6rem;
+    order: 2;
+  }
+  .sign-btn {
+    width: 6rem;
+    height: 2.5rem;
+  }
+  .menu-div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    margin-left: 0;
+  }
+  .main-div {
+    gap: 8%;
+    padding: 6rem 2rem;
+  }
+  h1 {
+    font-size: 80px;
+    line-height: 64px;
+  }
+  .text-p {
+    font-size: 38px;
+    padding: 0 2rem;
+    line-height: 44px;
+  }
+  .btn-order-now {
+    width: 12rem;
+    height: 3rem;
+  }
+  .text-paragraph {
+    font-size: 42px;
+    margin-top: 16%;
+  }
+  .menu-div {
+    margin-top: 90px;
   }
   
+}
+
+@media screen and (max-width: 480px) {
+  .sign-btn {
+    width: 5rem;
+    height: 2.5rem;
+  }
+  .login-btn {
+    padding-right: 0.3rem;
+  }
+
+  h1 {
+    font-size: 70px;
+    line-height: 44px;
+  }
+  .text-p {
+    font-size: 28px;
+    padding: 0 2rem;
+    line-height: 34px;
+  }
+  .btn-order-now {
+    width: 12rem;
+    height: 3rem;
+  }
+  .text-paragraph {
+    font-size: 34px;
+    line-height: 28px;
+  }
+  .welcome-div {
+    height: 45vh;  
+  }
+  .bg-welcome {
+    margin-top: 4rem;
+  }
+  .card {
+    width: 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 320px) {
+  
+
 }
